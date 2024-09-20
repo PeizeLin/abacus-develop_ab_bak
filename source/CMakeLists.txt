@@ -1,0 +1,33 @@
+add_subdirectory(module_base)
+add_subdirectory(module_cell)
+add_subdirectory(module_symmetry)
+add_subdirectory(module_neighbor)
+add_subdirectory(module_psi)
+add_subdirectory(module_elecstate)
+add_subdirectory(module_hamilt)
+add_subdirectory(module_hsolver)
+add_subdirectory(module_orbital)
+add_subdirectory(module_md)
+add_subdirectory(module_pw)
+add_subdirectory(module_surchem)
+add_subdirectory(module_deepks)
+add_subdirectory(module_xc)
+add_subdirectory(module_esolver)
+add_subdirectory(module_gint)
+add_subdirectory(src_io)
+add_subdirectory(module_relaxation)
+add_subdirectory(src_lcao)
+add_subdirectory(src_parallel)
+add_subdirectory(src_pdiag)
+add_subdirectory(src_pw)
+add_subdirectory(src_ri)
+
+add_library(
+    driver
+    OBJECT
+    driver.cpp
+    driver_run.cpp
+    input.cpp
+    input_conv.cpp
+    input_update.cpp
+)
