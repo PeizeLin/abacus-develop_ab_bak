@@ -1,0 +1,30 @@
+INPUT_PARAMETERS
+#Parameters (1.General)
+suffix		    test 
+ntype               2
+nbands              18
+pseudo_type         upf
+pseudo_dir          ./
+
+#Parameters (2.Methods)
+calculation         relax
+
+#Parameters (3.PW)
+ecutwfc             200
+scf_thr                 1e-8
+scf_nmax		    100
+
+#Parameters (5.LCAO)
+basis_type          lcao
+#ks_solver           cg
+gamma_only          0
+
+relax_nmax               200
+force_thr_ev        0.001
+
+#Parameters (6.Smearing) 
+smearing_method            gaussian
+smearing_sigma               0.02
+
+cal_stress 1
+stress_thr         1e-6
